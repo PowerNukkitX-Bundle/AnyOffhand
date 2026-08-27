@@ -3,7 +3,6 @@ package org.powernukkitx.anyoffhand;
 import it.unimi.dsi.fastutil.Pair;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import org.powernukkitx.Player;
-import org.powernukkitx.block.BlockID;
 import org.powernukkitx.event.EventHandler;
 import org.powernukkitx.event.EventPriority;
 import org.powernukkitx.event.Listener;
@@ -41,7 +40,7 @@ public class AnyOffhand extends PluginBase implements Listener {
     public static int trigger_delta;
     public static int trigger_cooldown;
 
-    private static Object2ObjectArrayMap<String, Pair<Integer, Long>> SNEAK_DATA = new Object2ObjectArrayMap<>();
+    private static final Object2ObjectArrayMap<String, Pair<Integer, Long>> SNEAK_DATA = new Object2ObjectArrayMap<>();
 
     @Override
     public void onEnable() {
