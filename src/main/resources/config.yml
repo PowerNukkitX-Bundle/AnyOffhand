@@ -1,0 +1,15 @@
+item:
+  # options: whitelist|blacklist
+  # when whitelist, only items from that list can be put in offhand.
+  # when blacklist, all items except items from the list can be put in offhand.
+  mode: "whitelist"
+  items:
+    - "minecraft:torch"
+
+trigger:
+  # how many times the player have to sneak to swap the item
+  amount: 2
+  # mex time in milliseconds between sneaking
+  delta: 1000
+  # cooldown to wait between swapping
+  cooldown: 3000
